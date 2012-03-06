@@ -1,0 +1,47 @@
+<%= search_form_for @q do |srch| %>
+  <p>
+	<%= srch.label :name_cont %>
+  	<%= srch.text_field :name_cont %> 
+  </p>
+  <p>
+  	<%= srch.label :school_name_cont %>
+  	<%= srch.text_field :school_name_cont %>  
+  </p>
+  <p>
+  	<%= srch.label :subjects_name_cont %>
+  	<%= srch.text_field :subjects_name_cont %>  
+  </p>  
+  <p>
+    <%= srch.submit %>
+  </p>
+<% end %>
+
+<br><br>
+
+<h1>Listing students</h1>
+<table>
+  <tr>
+    <th>School</th>
+    <th>Student Name</th>
+    <th>Subjects</th>
+    <th>Actions</th>
+  </tr>
+
+<% @people.each do |student| %>
+  <tr>
+    <td><%= student.school.name %></td>
+    <td><%= student.name %></td>
+    <td>
+    <% student.subjects.each do |sub| %>
+      <%= sub.name%>&nbsp;&nbsp;
+    <% end %>
+    </td>
+    <td><%= link_to 'Show', student %> &nbsp; <%= link_to 'Edit', edit_student_path(student) %> &nbsp; <%= link_to 'Destroy', student, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+  <% end %>
+</table>
+
+<br/>
+
+<%= link_to 'New Student', new_student_path %> <br>
+<%= link_to 'New School', new_school_path %>

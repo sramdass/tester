@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>fileTriggers</key>
+        <dict>
+            <key>_form</key>
+            <string>app\views\students\_form.html.erb</string>
+            <key>appli</key>
+            <string>app\assets\stylesheets\application.css</string>
+            <key>data</key>
+            <string>config\database.yml</string>
+            <key>gemfile</key>
+            <string>Gemfile</string>
+            <key>index</key>
+            <string>app\views\students\index.html.erb</string>
+            <key>new</key>
+            <string>app\views\students\new.html.erb</string>
+            <key>routes</key>
+            <string>config\routes.rb</string>
+            <key>school.rb</key>
+            <string>app\models\school.rb</string>
+            <key>show</key>
+            <string>app\views\students\show.html.erb</string>
+            <key>stu_sub</key>
+            <string>app\models\stu_sub_map.rb</string>
+            <key>student</key>
+            <string>app\models\student.rb</string>
+            <key>student.rb</key>
+            <string>app\models\student.rb</string>
+            <key>students</key>
+            <string>app\controllers\students_controller.rb</string>
+            <key>subject</key>
+            <string>app\models\subject.rb</string>
+        </dict>
+    </dict>
+</plist>
